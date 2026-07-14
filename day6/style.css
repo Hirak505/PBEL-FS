@@ -1,0 +1,141 @@
+*{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        nav{
+            width:100%;
+            height:80px;
+            background-color:#8dd9e8;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:0 40px;
+        }
+        
+        #logo h2{
+            font-size:30px;
+        }
+
+        #menu{
+            width:40%;
+            display:flex;
+            justify-content:space-around;
+        }
+
+        #menu a{
+            text-decoration:none;
+            color:black;
+            font-size:18px;
+            font-weight:bold;
+        }
+         #pricing{
+            width:100%;
+            padding:60px 40px;
+            background-color:#dff6fb;
+            text-align:center;
+        }
+
+        #pricing h2{
+            font-size:35px;
+            margin-bottom:40px;
+        }
+
+        .price-container{
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+        }
+
+        .card{
+            width:28%;
+            background:white;
+            border:2px solid black;
+            border-radius:10px;
+            padding:25px;
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            font-size:28px;
+        }
+
+        .card h1{
+            color:green;
+            margin-bottom:20px;
+        }
+
+        .card p{
+            margin:12px 0;
+            font-size:18px;
+        }
+
+        .card button{
+            margin-top:20px;
+            padding:10px 25px;
+            border:none;
+            background:#8dd9e8;
+            font-size:16px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+        #gallery{
+            width:100%;
+            height:auto;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            flex-wrap:wrap;
+            padding:40px 0;
+        }
+
+        #banner{
+            width:100%;
+            height:400px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            background-color:#f5f5f5;
+        }
+
+        #banner h1{
+            font-size:45px;
+            margin-bottom:20px;
+        }
+
+        #banner p{
+            font-size:20px;
+        }
+
+        #about{
+            width:100%;
+            padding:60px 40px;
+            text-align:center;
+            background-color:#ffffff;
+        }
+
+        #about h2{
+            font-size:35px;
+            margin-bottom:20px;
+        }
+
+        #about p{
+            width:70%;
+            margin:auto;
+            font-size:18px;
+            line-height:30px;
+        }
+
+        footer{
+            width:100%;
+            height:70px;
+            background:#333;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        } 
+   

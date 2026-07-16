@@ -1,0 +1,186 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    margin-bottom:40px;
+    animation:textAnimation 2s ease-in-out;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    width:90%;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.box{
+    width:120px;
+    height:120px;
+    margin:20px auto;
+}
+
+
+
+.translate{
+    background:red;
+    transition:transform 1s;
+}
+
+.translate:hover{
+    transform:translateX(80px);
+}
+
+
+
+.scale{
+    background:green;
+    transition:0.5s;
+}
+
+.scale:hover{
+    transform:scale(1.5);
+}
+
+
+.rotate{
+    background:orange;
+    transition:1s;
+}
+
+.rotate:hover{
+    transform:rotate(360deg);
+}
+
+
+
+.bounce{
+    background:blue;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-40px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+
+
+.color{
+    animation:colorChange 4s infinite;
+}
+
+@keyframes colorChange{
+
+0%{
+background:red;
+}
+
+25%{
+background:blue;
+}
+
+50%{
+background:green;
+}
+
+75%{
+background:orange;
+}
+
+100%{
+background:red;
+}
+
+}
+
+
+
+.move{
+    background:purple;
+    animation:move 3s infinite alternate;
+}
+
+@keyframes move{
+
+from{
+transform:translateX(0);
+}
+
+to{
+transform:translateX(80px);
+}
+
+}
+
+
+
+@keyframes textAnimation{
+
+0%{
+opacity:0;
+transform:translateY(-30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+p{
+    margin-top:15px;
+}
+
+
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+body{
+background:#eef8ff;
+}
+
+}
+
